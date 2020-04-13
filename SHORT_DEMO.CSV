@@ -1,4 +1,4 @@
 "FirstName","LastName","DBA","Address1","AddressCity","AddressState","AddressZip","ExpDate","IssuedDate","LastRenDate","Prefix","LicNumber","LicType","Status"
 "MICHAEL D","ASHINGTON-PICKETT","INDIVIDUAL","1307 MONTCALM STREET","ORLANDO","FL","32806","08/31/2020","","08/16/2000","CBC","CBC006522","Building Contractor","Active"
 "SAM A JR","CRACCHIOLO","","8483 GRAND PRIX LANE","BOYNTON BEACH","FL","33472","08/31/2020","01/03/1980","09/29/2010","CBC","CBC015061","Building Contractor","Active"
-"SAM A JR","CRACCHIOLO","","8483 GRAND PRIX LANE","BOYNTON BEACH","FL","33472","08/31/2020","01/03/1980","09/29/2010","CBC","CBC015061","Building Contractor","Active"
+"FINN","FINNERSON","","8888 STREET AVE","PAY","FL","33472","08/31/2020","01/03/1980","09/29/2010","CFC","CFC556644","Master Plumber","Active"
