@@ -7,14 +7,14 @@ pipelines:
           script:
             - echo "Please Give me a $REPO_VAR_00"
             - ls -r $BITBUCKET_CLONE_DIR
-            - git clone git@github.com:jasonyahoo/soongone.git
+            - git config --global user.name $EXT_GIT_USR
+            - git config --global user.email $EXT_GIT_EMAIL
+            - git clone $EXT_GIT_SSH_URL
             - apt-get update -y
             - apt-get -y install rsync
             - ls -r $BITBUCKET_CLONE_DIR
-            - rsync -av --exclude=".*" --exclude="soongone" $BITBUCKET_CLONE_DIR/ soongone/
+            - rsync -av --exclude=".*" --exclude="$EXT_GIT_REPO_NAME" $BITBUCKET_CLONE_DIR/ $EXT_GIT_REPO_NAME/
             - cd soongone
-            - git config --global user.name $EXT_GIT_USR
-            - git config --global user.email $EXT_GIT_EMAIL
             - git add .
             - git commit -m "Automated Commit from BB"
             - git push
