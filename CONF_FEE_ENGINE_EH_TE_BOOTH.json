@@ -1,0 +1,29 @@
+[
+  {
+    "metadata": {
+      "description": "",
+      "comments": "Inspection Fee"
+    },
+    "sequenceOrder": 1,
+    "feeCode": "EHTEBOOTH01",
+    "feeSchedule": "EH_TE_BOOTH",
+    "uniqueFeeGroup": "",
+    "recordTypes": [
+      {
+        "mask": "EnvHealth/Temporary Event/Booth/NA"
+      }
+    ],
+    "grandfathered": false,
+    "grandfatherDate": "",
+    "defaultTiming": [
+      "F",
+      "R"
+    ],
+    "defaultTimingCriteria": "exists(vEventName,['ApplicationSpecificInfoUpdateAfter'])",
+    "defaultCriteria": "AInfo['Is Food Prepared Offsite'] == 'Y' || AInfo['Is Food Prepared Offsite'] == 'Yes'",
+    "defaultUnits": "1",
+    "defaultPeriod": "FINAL",
+    "defaultRemoveIfFalse": true,
+    "defaultInvoice": false
+  }
+]
